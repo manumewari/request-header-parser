@@ -1,15 +1,17 @@
-const Http = require("http");
+const express = require("express");
+const app = express();
 
-const server = Http.createServer((req, res) => {
+app.get("/requestHeaderParser", (req, res) => {
 
     const userAgent = req.headers['user-agent'];
     const acceptLanguage = req.headers['accept-language'];
     const ipAddress = req.headers['x-forwarded-for'];
+    res.send(JSON.stringify({"ipadress": ipAddress, "language": acceptLanguage, "software": userAgent}));
+})
 
-    res.write(JSON.stringify({"ipadress": ipAddress, "language": acceptLanguage, "software": userAgent}));
-    res.end();
-});
+app.use((req, res, next) => {
+    res.status(404).send("The URL you have entered is not valid.");
+})
 
-server.listen(3000);
-
+app.listen(3000);
 

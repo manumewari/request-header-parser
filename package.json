@@ -1,0 +1,23 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "const fs = require(\"fs\");",
+  "main": "request-header-parser.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manumewari/request-header-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manumewari/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/manumewari/request-header-parser#readme"
+}
