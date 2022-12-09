@@ -4,7 +4,7 @@
   "description": "const fs = require(\"fs\");",
   "main": "request-header-parser.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   },
   "devDependencies": {},
   "scripts": {
